@@ -1,0 +1,572 @@
+@charset "UTF-8";
+
+html {
+    overflow: hidden;
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+
+    align-items: stretch;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    margin: unset;
+    /*넘치는 부분은 보여지지 않고 스크롤로 내릴 수 있음 */
+    overflow: hidden auto;
+    position: absolute;
+    scroll-behavior: smooth;
+
+
+}
+
+
+body > .header {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    white-space: nowrap;
+}
+
+
+body > .header > .content {
+
+    position: fixed;
+    backdrop-filter: blur(10px);
+    width: 100%;
+    max-width: 85rem;
+    margin: 0 2rem;
+
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    border-bottom: 1px solid rgb(174,174,174);
+    padding: 0.5rem 0;
+}
+
+body > .header > .content > .logo {
+    background-color: inherit;
+    color: rgb(0, 0, 0);
+    font-size: 1.4rem;
+    text-decoration: none;
+    padding: 0.5rem 0 1rem 2rem;
+    font-weight: bold;
+    flex: 1;
+    cursor: pointer;
+}
+
+body > .header > .content > .intro,
+body > .header > .content > .aboutMe,
+body > .header > .content > .skills,
+body > .header > .content > .projects {
+    background-color: inherit;
+    color: rgb(0, 0, 0);
+    font-size: 1.1rem;
+    text-decoration: none;
+    padding: 0.5rem 0 1rem 2rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+body > .header > .content > .intro:hover,
+body > .header > .content > .aboutMe:hover,
+body > .header > .content > .skills:hover,
+body > .header > .content > .projects:hover {
+    color: rgb(255, 151, 0);
+}
+
+body > .header > .content > .intro.selected,
+body > .header > .content > .aboutMe.selected,
+body > .header > .content > .skills.selected,
+body > .header > .content > .projects.selected {
+    color: rgb(255, 151, 0);
+}
+
+body > main > .section > .main-intro {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+body > main > section > .main-intro > .--content {
+    display: flex;
+    flex-direction: row;
+    min-width: 73rem;
+    align-items: center;
+    margin-top: 9.5rem;
+}
+
+body > main > section > .main-intro > .--content > .information {
+    font-weight: bold;
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    font-family: none;
+    margin-left: 5rem;
+
+}
+
+body > main > section > .main-intro > .--content > .information > .circle {
+    font-size: 1rem;
+    background-color: rgba(255, 151, 0, 70%);
+    color: rgb(255, 255, 255);
+    border-radius: 2.5rem;
+    border: 0.25rem solid rgb(255, 255, 255);
+    width: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+body > main > section > .main-intro > .--content > .information > a {
+    font-size: 2.5rem;
+    padding: 0.3rem;
+}
+
+
+body > main > section > .main-intro > .--content > .contact {
+    width: 25rem;
+    border: 0.25rem solid rgba(255, 151, 0, 60%);;
+    border-radius: 0.8rem;
+    margin-top: 5rem;
+    padding: 2rem 4rem 1rem 3.2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    font-family: none;
+}
+
+body > main > section > .main-intro > .--content > .contact > .name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+body > main > section > .main-intro > .--content > .contact > .content {
+    display: flex;
+    align-items: flex-start;
+    margin-left: 4rem;
+    justify-content: center;
+    flex-direction: column;
+}
+
+body > main > section > .main-intro > .--content > .contact > .content > a {
+    margin-bottom: 1.3rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+body > main > section > .main-intro > .--content > .contact > .name > b {
+    font-weight: 900;
+    font-size: 1.2rem;
+    margin-bottom: 1.3rem;
+}
+
+body > main > section > .main-intro > .--content > .contact > .content > .image:first-child {
+    margin-right: 0.5rem;
+}
+
+
+body > main > section > .main-intro > .--content > .contact > .content > a > .tistory {
+    margin-top: 0.2rem;
+    margin-left: 0.2rem;
+    width: 1.8rem;
+    margin-bottom: -0.4rem;
+    cursor: pointer;
+}
+
+body > main > section > .main-intro > .--content > .contact > .content > a > .github {
+    margin-left: 0.2rem;
+    width: 1.8rem;
+    margin-bottom: -0.4rem;
+    cursor: pointer;
+}
+
+
+body > main > section > .main-aboutMe {
+    margin-top: 15rem;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+body > main > section > .main-aboutMe > .--content {
+    padding-top: 4rem;
+}
+
+body > main > section > .main-aboutMe > .--content > .title {
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    font-size: 2.4rem;
+}
+
+body > main > section > .main-aboutMe > .--content > .content {
+    width: 66rem;
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10rem;
+}
+
+body > main > section > .main-aboutMe > .--content > .content > .profile {
+    display: flex;
+}
+
+body > main > section > .main-aboutMe > .--content > .content > .profile > .image:first-child {
+    margin-right: 3rem;
+    margin-left: 2rem;
+}
+
+body > main > section > .main-aboutMe > .--content > .content > .profile > .image {
+    border-radius: 0.7rem;
+    width: 21rem;
+    margin-bottom: 5rem;
+}
+
+body > main > section > .main-aboutMe > .--content > .content > .text {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: -6rem;
+    margin-left: 2rem;
+}
+
+body > main > section > .main-aboutMe > .--content > .content > .text > a {
+    padding-top: 0.6rem;
+    font-weight: 700;
+    font-family: none;
+    font-size: 1.1rem;
+}
+
+
+body > main > section > .main-skills {
+    margin-top: 5rem;
+
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgb(241, 243, 245);
+}
+
+body > main > section > .main-skills > .--content {
+    margin-top: 5rem;
+    margin-bottom: 6rem;
+}
+
+body > main > section > .main-skills > .--content > .title {
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    font-size: 2.4rem;
+}
+
+body > main > section > .main-skills > .--content > .skills {
+    margin-top: 4rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+
+}
+
+body > main > section > .main-skills > .--content > .skills2,
+body > main > section > .main-skills > .--content > .skills3,
+body > main > section > .main-skills > .--content > .skills4 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+    margin-top: 2rem;
+}
+
+body > main > section > .main-skills > .--content > .skills > .content,
+body > main > section > .main-skills > .--content > .skills2 > .content,
+body > main > section > .main-skills > .--content > .skills3 > .content,
+body > main > section > .main-skills > .--content > .skills4 > .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(255, 255, 255);
+    border-radius: 0.9rem;
+    padding-top: 1.2rem;
+    padding-right: 1.5rem;
+    padding-bottom: 1.2rem;
+    width: 30rem;
+    height: 9rem;
+    font-family: none;
+}
+
+
+body > main > section > .main-skills > .--content > .skills > .content:hover,
+body > main > section > .main-skills > .--content > .skills2 > .content:hover,
+body > main > section > .main-skills > .--content > .skills3 > .content:hover,
+body > main > section > .main-skills > .--content > .skills4 > .content:hover {
+    transform: translateY(-30px);
+    transition: all 0.4s ease 0s;
+}
+
+body > main > section > .main-skills > .--content > .skills > .content > ul > .title,
+body > main > section > .main-skills > .--content > .skills2 > .content > ul > .title,
+body > main > section > .main-skills > .--content > .skills3 > .content > ul > .title,
+body > main > section > .main-skills > .--content > .skills4 > .content > ul > .title {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body > main > section > .main-skills > .--content > .skills > .content > ul > li,
+body > main > section > .main-skills > .--content > .skills2 > .content > ul > li,
+body > main > section > .main-skills > .--content > .skills3 > .content > ul > li,
+body > main > section > .main-skills > .--content > .skills4 > .content > ul > li {
+    font-weight: 700;
+    list-style: none;
+    margin-bottom: 0.3rem;
+}
+
+body > main > section > .main-skills > .--content > .skills > .content > ul,
+body > main > section > .main-skills > .--content > .skills2 > .content > ul,
+body > main > section > .main-skills > .--content > .skills3 > .content > ul,
+body > main > section > .main-skills > .--content > .skills4 > .content > ul {
+    margin-left: -2rem;
+    margin-top: 2rem;
+}
+
+
+body > main > section > .main-skills > .--content > .skills > .content > .image.html {
+    width: 7rem;
+    margin-left: -2rem;
+}
+
+body > main > section > .main-skills > .--content > .skills > .content > .image.css {
+    width: 5rem;
+    margin-left: -4rem;
+    margin-right: 1rem;
+}
+
+body > main > section > .main-skills > .--content > .skills2 > .content > .image.java {
+    width: 4.9rem;
+    margin-right: 2rem;
+}
+
+body > main > section > .main-skills > .--content > .skills3 > .content > .image.mariadb {
+    width: 9rem;
+    margin-left: 1.5rem;
+    margin-right: 1.1rem;
+}
+
+body > main > section > .main-skills > .--content > .skills3 > .content > .image.mysql {
+    width: 7rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+body > main > section > .main-skills > .--content > .skills4 > .content > .image.springBoot {
+    width: 7rem;
+    margin-left: 2rem;
+    margin-right: 1rem;
+}
+
+body > main > section > .main-skills > .--content > .skills4 > .content > .image.c {
+    width: 6rem;
+    margin-right: 2rem;
+}
+
+body > main > section > .main-project {
+
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgb(241, 243, 245);
+    padding-bottom: 10rem;
+}
+
+body > main > section > .main-project > .--content {
+    margin-top: 5rem;
+}
+
+body > main > section > .main-project > .--content > .title-container {
+    display: flex;
+    flex-direction: column;
+}
+
+body > main > section > .main-project > .--content > .title-container > .title {
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    font-size: 2.4rem;
+}
+
+body > main > section > .main-project > .--content > .title-container > .explain {
+    font-family: none;
+    margin-top: 0.4rem;
+}
+
+body > main > section > .main-project > .--content > .title-container > .explain.first {
+    margin-top: 1rem;
+}
+
+body > main > section > .main-project > .--content > .title-container > .explain > .circle-icon {
+    font-size: 1rem;
+    color: rgba(255, 151, 0, 70%);
+    margin-right: 0.5rem;
+
+}
+
+body > main > section > .main-project > .--content > .title-container > .explain > .icon {
+    margin-left: 0.2rem;
+    margin-top: 0.9rem;
+    margin-right: 0.5rem;
+}
+
+body > main > section > .main-project > .--content > .projects > .content > a{
+    text-decoration: none;
+}
+
+body > main > section > .main-project > .--content > .projects > .content > a > .image {
+    width: 23rem;
+    height: 26rem;
+    border-radius: 1.8rem;
+    cursor: pointer;
+}
+
+body > main > section > .main-project > .--content > .projects > .content > a>.image:hover {
+    transform: translateY(-30px);
+    cursor: pointer;
+    transition: all 0.4s ease 0s;
+}
+
+body > main > section > .main-project > .--content > .projects > .content > a>.image:first-child {
+    margin-right: 1rem;
+}
+
+body > main > section > .main-project > .--content > .projects > .content {
+    display: flex;
+    margin-bottom: 3rem;
+
+}
+
+body > main > section > .main-project > .--content > .projects > .content:first-child {
+    margin-top: 3rem;
+}
+
+body > main > section > .main-project > .--content > .projects > .content > ul {
+    background-color: rgb(255, 255, 255);
+    margin-left: 2rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 17rem;
+    border-radius: 1.2rem;
+    padding-right: 2rem;
+}
+
+body > main > section > .main-project > .--content > .projects > .content > ul > li {
+    list-style: none;
+    margin-top: 0.6rem;
+    margin-left: -0.5rem;
+    font-family: none;
+}
+
+body > main > section > .main-project > .--content > .projects > .content > ul > li:nth-child(2),
+body > main > section > .main-project > .--content > .projects > .content > ul > .text.last-line {
+    margin-bottom: 0.3rem;
+}
+
+body > main > section > .main-project > .--content > .projects > .content > ul > .name {
+    font-weight: 800;
+    font-size: 1.3rem;
+    margin-top: 3rem;
+}
+
+body > main > section > .main-project > .--content > .projects > .content > ul > .title {
+    font-weight: 800;
+    font-size: 1rem;
+    margin-top: 2rem;
+
+}
+
+body > main > section > .main-project > .--content > .projects > .content > ul > li > a > i:hover {
+    color: rgb(255, 151, 0);
+}
+
+body > main > section > .main-project > .--content > .projects > .content > ul > .text:hover {
+    text-decoration: underline;
+    color: rgb(87, 87, 87);
+    cursor: pointer;
+}
+
+body > main > section > .main-project > .--content > .projects > .content > ul > li > a > i {
+    color: rgb(0, 0, 0);
+    margin-left: 0.5rem;
+    font-size: 1rem;
+    margin-bottom: 1.3rem;
+}
+
+body > main > section > .footer > .--content {
+    display: flex;
+    flex-flow: wrap;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 10rem;
+    padding-top: 5rem;
+}
+
+body > main > section > .footer > .--content > .title {
+    font-size: 2rem;
+    margin-bottom: 2.2rem;
+}
+
+
+body > main > section > .footer > .--content > .contact-container {
+    display: flex;
+    flex-direction: row;
+}
+
+body > main > section > .footer > .--content > .contact-container > .contact-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-right: 1.4rem;
+    font-size: 1.1rem;
+
+}
+
+body > main > section > .footer > .--content > .contact-container > .contact-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 1.1rem;
+
+}
+
+body > main > section > .footer > .--content > .contact-container > .contact-icon > .email,
+body > main > section > .footer > .--content > .contact-container > .contact-content > .email {
+    margin-bottom: 2rem;
+}
+
+body > main > section > .footer > .--content > .contact-container > .contact-content > .phone {
+    margin-left: -6.8rem;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}

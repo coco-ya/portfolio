@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hyunji Portfolio</title>
+    <link rel="stylesheet" th:href="@{/resources/stylesheets/home.css}">
+    <script src="https://kit.fontawesome.com/282afddd53.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script defer src="/resources/scripts/home.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<header class="header" id="header">
+    <div class="content" id="headerContainer">
+        <a class="logo" rel="menu" data-target-section="logo" href="#intro" >PORTFOLIO</a>
+        <a class="intro" rel="menu" data-target-section="intro" >INTRO</a>
+        <a class="aboutMe" rel="menu" data-target-section="about" >ABOUT ME</a>
+        <a class="skills" rel="menu" data-target-section="skills" >SKILLS</a>
+        <a class="projects" rel="menu" data-target-section="projects" >PROJECTS</a>
+    </div>
+</header>
+<main id="sectionContainer">
+    <section class="section" rel="section" data-section="intro" id="intro">
+        <div class="main-intro">
+            <div class="--content content">
+                <div class="information">
+                    <a class="circle">안녕하세요!</a>
+                    <a>발전하는</a>
+                    <a>백엔드 개발자</a>
+                    <a>김현지입니다.</a>
+                </div>
+
+                <div class="contact">
+                    <div class="name">
+                        <b>이름</b>
+                        <b>연락처</b>
+                        <b>생년월일</b>
+                        <b>이메일</b>
+                        <b class="image-name">티스토리</b>
+                        <b class="image-name">깃허브</b>
+                    </div>
+                    <div class="content">
+                        <a>김현지</a>
+                        <a>010-4843-4232</a>
+                        <a>2000.08.23</a>
+                        <a>guswl049012@naver.com</a>
+                        <a href="https://coconya.tistory.com/" target='_blank'><img alt="" class="tistory" src="https://blog.kakaocdn.net/dn/tJJAF/btqNH0rpnHA/QFedr6Gwu7hoSEDOKltfvk/img.png"></a>
+
+                        <a href="https://github.com/coco-ya" style="margin-bottom: 0" target='_blank'>
+                            <img alt="" class="github"
+                                 src="https://cdn-icons-png.flaticon.com/512/25/25231.png"> </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" rel="section" data-section="about">
+        <div class="main-aboutMe">
+            <div class="--content aboutMe">
+                <a class="title">ABOUT ME</a>
+                <div class="content">
+                    <div class="profile">
+                        <img alt="" class="image" th:src="@{/resources/images/profile.jpg}">
+                    </div>
+                    <div class="text">
+                        <a>대학교 재학 중 전공 수업에서 배운 코딩에 재미를 느끼게 되어</a>
+                        <a>전공과 관련된 임베디드 개발자가 되어볼까? 라는 생각이 들었지만</a>
+                        <a> 회로를 꾸미는 것과 개발을 같이하는 것보단 오직 개발만이 하고싶었습니다.</a>
+                        <br>
+                        <a>호기심이 많고 원하는 기능을 직접 만들어보는 것을 좋아하기에 </a>
+                        <a>좋아하는 기능들 만을 사용할 수 있는 홈페이지를 만들어보고 싶었고,</a>
+                        <a>내가 원하는 기능들을 넣은 홈페이지를 많은 사람들이 써주길 바라여</a><a> 웹 개발자가 되는 것이 목표가 되었습니다. </a>
+                        <br>
+                        <a>하고싶은 것은 바로 해보자라는 생각에 대학교를 마치기 전 4학년 2학기에 </a>
+                        <a>'풀 스택 개발자' 국비 지원 교육을 듣는 것을 시작으로 웹 개발자가 되었습니다.</a>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" rel="section" data-section="skills">
+        <div class="main-skills">
+            <div class="--content skill">
+                <a class="title">SKILLS</a>
+
+                <div class="skills">
+                    <div class="content" style="margin-right: 3rem;">
+                        <img alt="" class="image html"
+                             src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png">
+                        <ul>
+                            <li class="title">HTML</li>
+                            <li>웹 페이지 틀을 설계할 수 있습니다.</li>
+                            <li>Thymeleaf 문법을 사용하여 백엔드 서버와 </li>
+                            <li>연동하여 사용이 가능합니다.</li>
+                        </ul>
+                    </div>
+
+                    <div class="content">
+                        <img alt="" class="image css"
+                             src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png">
+                        <ul>
+                            <li class="title">CSS</li>
+                            <li>flex 속성을 사용할 수 있습니다.</li>
+                            <li>반응형 레이아웃 구현이 가능합니다.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="skills2">
+                    <div class="content" style="margin-right: 3rem;">
+                        <img alt="" class="image js"
+                             src="https://t1.daumcdn.net/cfile/tistory/2149683A58CA6BF313"
+                             style="max-width: 8rem;margin-left: -2rem;">
+                        <ul>
+                            <li class="title">JAVA SCRIPT</li>
+                            <li>이벤트를 사용이 가능합니다.</li>
+                            <li>DB와 연동하여 데이터 CRUD가 가능합니다.</li>
+                            <li>AJAX 문을 사용할 수 있습니다.</li>
+                        </ul>
+                    </div>
+
+                    <div class="content">
+                        <img alt="" class="image java"
+                             src="https://upload.wikimedia.org/wikipedia/en/thumb/3/30/Java_programming_language_logo.svg/1200px-Java_programming_language_logo.svg.png">
+                        <ul>
+                            <li class="title">JAVA</li>
+                            <li>자바 문법을 학습하여 사용이 가능합니다.</li>
+                            <li>자료구조와 알고리즘을 공부하였습니다.</li>
+                            <li>프로그램 구현이 가능합니다.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="skills3">
+                    <div class="content" style="margin-right: 3rem;">
+                        <img alt="" class="image mariadb"
+                             src=" https://media.amazonwebservices.com/blog/2015/mariadb_seal_shaded_browntext_alt_1.png">
+                        <ul>
+                            <li class="title">MARIA DB</li>
+                            <li>쿼리문을 작성하여 테이블을 만들고 사용할 수 있습니다.</li>
+                            <li>myBatis를 활용하여 xml 작성 및 활용이 가능합니다. </li>
+                        </ul>
+                    </div>
+
+                    <div class="content">
+                        <img alt="" class="image mysql"
+                             src="https://076923.github.io/assets/images/mysql.png">
+                        <ul>
+                            <li class="title">MY SQL</li>
+                            <li>데이터 CRUD가 가능하며 웹의 요소들을 구현할 수 있습니다.</li>
+                            <li>외래키,기본키,JOIN 사용이 가능합니다.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="skills4">
+                    <div class="content" style="margin-right: 3rem;">
+                        <img alt="" class="image springBoot"
+                             src=" https://perfectacle.github.io/2018/07/22/spring-boot-2-env/thumb.png">
+                        <ul>
+                            <li class="title">SPRING BOOT</li>
+                            <li>알맞은 어노테이션 사용이 가능합니다.</li>
+                            <li>MVC패턴을 사용하여 웹페이지 구현이 가능합니다.</li>
+                        </ul>
+                    </div>
+
+                    <div class="content">
+                        <img alt="" class="image c"
+                             src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1200px-ISO_C%2B%2B_Logo.svg.png">
+                        <ul>
+                            <li class="title">C</li>
+                            <li>포인터 및 구조체에 대한 이해도가 있습니다.</li>
+                            <li>임베디드 시스템과 연동이 가능합니다.</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="section" style="background: rgb(241 243 245);" rel="section" data-section="projects">
+        <div class="main-project">
+            <div class="--content project">
+                <div class="title-container">
+                    <a class="title">PROJECTS</a>
+                    <a class="explain first">
+                        <i class="circle-icon fa-solid fa-circle-check"></i>
+                        이미지 클릭 시 상세 설명 페이지로 이동합니다.
+                    </a>
+                    <a class="explain">
+                        <i class="circle-icon fa-solid fa-circle-check"></i>
+                        <i class="fa-regular fa-paper-plane" style="margin-right: 0.1rem"></i>  클릭 시 해당 웹 페이지로 이동합니다.
+                    </a>
+                </div>
+                <div class="projects">
+                    <div class="content">
+                        <a th:href="@{/cocoya/dios}" target='_blank'>
+                            <img alt="" class="image" th:src="@{/resources/images/dios.png}">
+                            <img alt="" class="image" th:src="@{/resources/images/diosMyPage.png}">
+                        </a>
+
+                        <ul>
+                            <li class="name">DIOS</li>
+                            <li>운동 기록장 및 커뮤니티를 이용할 수 있으며,</li>
+                            <li style="margin-top: 0">운동과 관련된 제품을 구매할 수 있습니다.</li>
+
+                            <li class="title">사용 기술</li>
+                            <li class="text">HTML, CSS, JAVA, JAVASCRIPT</li>
+                            <li class="text">SPRING BOOT, MARIA DB, MY SQL</li>
+                            <li class="title">보러가기</li>
+                            <li><a href="https://dios.cocoyami.com" target='_blank'><i
+                                    class="fa-solid fa-paper-plane"></i></a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="footer">
+            <div class="--content contact">
+                <h2 class="title">CONTACT ME</h2>
+                <div class="contact-container">
+                    <div class="contact-icon">
+                        <i class=" email fa-solid fa-envelope"></i>
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <div class="contact-content">
+                        <a class="email">guswl049012@naver.com</a>
+                        <a href="tel:010-4843-4232" class="phone">
+                            010-4843-4232
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+</body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dios Project</title>
+    <link rel="stylesheet" th:href="@{/resources/stylesheets/dios.css}">
+    <script src="https://kit.fontawesome.com/282afddd53.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
+    <img
+            src="../static/resources/images/01.gif" height="648" width="1440"/>
+
+</head>
+<body>
+<header class="header" id="header">
+    <div class="content" id="headerContainer">
+        <a class="logo" id="logo" th:href="@{home}">PORTFOLIO</a>
+    </div>
+</header>
+<main>
+
+    <div class="main">
+        <div class="--content content">
+            <div class="title-container">
+                <a class="mini-title">운동 관련 웹 사이트</a>
+                <a class="main-title">DIOS</a>
+            </div>
+
+            <div class="list">
+                <a class="title">My list</a>
+                <a class="text" href="#loginMenu">1. 로그인 / 소셜 로그인</a>
+                <a class="text" href="#registerMenu">2. 회원가입</a>
+                <a class="text" href="#findMenu">3. 이메일 찾기 / 비밀번호 재설정</a>
+                <a class="text" href="#myPageMenu">4. 마이페이지</a>
+                <a class="text" href="#storeMenu">5. SHOP 상세페이지</a>
+            </div>
+
+            <a class="do-gif" href="https://dios.cocoyami.com">
+                <img class="gif" alt="setting" th:src="@{/resources/images/main.GIF}">
+                <span class="text">클릭 시 해당 페이지로 이동합니다.</span>
+            </a>
+
+            <div class="content-text">
+                <a class="title">설명</a>
+                <a class="text">팀프로젝트 <b>DIOS</b>는 운동 관련 웹 사이트입니다.</a>
+                <a class="text"><b>머신러닝</b>을 활용하여 세 종류의 운동이 가능하며, 운동 후 기록할 수 있는 <b>기록장</b>과 <b>커뮤니티</b>를 이용하여 소통이
+                    가능합니다.</a>
+                <a class="text last-line"><b>SHOP</b>에서 운동복 및 운동 기구를 구매하는 것이 가능하며, <b>마이페이지</b>를 통하여 장바구니와 주문내역을 확인할 수
+                    있습니다.</a>
+
+                <img class="image" alt="setting" th:src="@{/resources/images/login.png}" id="loginMenu">
+                <a class="text">해당 웹 사이트의 기록장, 커뮤니티, 스토어 등 대부분의 기능은 <b>로그인 후</b> 이용이 가능합니다.</a>
+                <a class="text last-line">사이트 전용 회원가입 후 로그인이 가능하며 <b>소셜 로그인</b>(카카오 로그인) 또한 가능합니다.</a>
+
+                <br>
+                <!--                <a class="sub-title">회원가입</a>-->
+                <img class="image" alt="setting" th:src="@{/resources/images/register1.png}" id="registerMenu">
+                <a class="text">해당 웹 사이트의 회원가입은 <b>3단계</b>의 절차로 이루어집니다.</a>
+                <a class="text last-line">서비스 이용약관 및 개인정보 처리방침을 읽고 <b>다음</b> 버튼 클릭 시 다음 단계로 이동합니다.</a>
+
+                <img class="image" alt="setting" th:src="@{/resources/images/register2.png}">
+                <a class="text last-line">이메일 주소 입력 후 <b>인증번호 전송</b> 버튼 클릭 시 해당 주소로 인증 번호가 포함된 메일이 발송됩니다.</a>
+                <img class="image email" alt="setting" th:src="@{/resources/images/email.png}">
+                <a class="text">상단 사진과 같이 메일로 발송된 <b>인증 번호</b>를 입력 칸에 알맞게 표기하면 확인이 가능합니다.</a>
+                <a class="text last-line">인증 번호 확인 후 정보를 모두 입력하고 <b>다음</b> 버튼 클릭 시 마지막 단계로 이동합니다. </a>
+
+                <img class="image" alt="setting" th:src="@{/resources/images/register3.png}">
+                <a class="text last-line">회원가입이 모두 완료된 마지막 단계로 <b>로그인 하러가기</b> 버튼 클릭 시 로그인 페이지로 이동합니다.</a>
+
+                <!--                <a class="sub-title">이메일 찾기</a>-->
+                <img class="image" alt="setting" th:src="@{/resources/images/findEmail.png}" id="findMenu"><a class="text last-line">회원가입 시 입력한 이름과 연락처를 입력 후 <b>이메일 찾기</b> 버튼 클릭 시 이메일 찾기가 가능합니다.</a>
+
+                <img class="image" alt="setting" th:src="@{/resources/images/findPassword.png}">
+                <a class="text">비밀번호 재설정은 이메일 인증 후 가능합니다.</a>
+                <a class="text last-line">회원가입 시 입력한 이메일을 입력 후 <b>인증하기</b> 버튼 클릭 시 해당 이메일로 인증이 가능한 링크가 전송됩니다.</a>
+
+                <img class="image email" alt="setting" th:src="@{/resources/images/findPasswordEmail.jpg}">
+                <a class="text last-line">전송된 이메일의 형태는 상단 사진과 같으며, <b>인증하기</b> 버튼 클릭 시 인증이 완료되어 비밀번호 재설정이 가능합니다.</a>
+
+                <img class="image" alt="setting" th:src="@{/resources/images/myPage.png}" id="myPageMenu">
+                <a class="text">로그인 전 상단 메뉴의 <b>로그인/회원가입</b>에서 로그인 후 <b>로그아웃/마이페이지</b>로 변경됩니다.</a>
+                <a class="text last-line">프로필 수정 메뉴에서 <b>프로필 사진</b> 변경 및 삭제, <b>닉네임</b> 변경이 가능합니다.</a>
+
+                <img class="image" alt="setting" th:src="@{/resources/images/myPageModify.png}">
+                <a class="text last-line">회원정보 수정은 회원의 개인정보 보호를 위해 <b>비밀번호 확인</b> 절차 후 가능합니다.</a>
+
+                <img class="image" alt="setting" th:src="@{/resources/images/myPageModify2.png}">
+                <a class="text">비밀번호 확인 절차 후 표시되는 페이지입니다.</a>
+                <a class="text last-line">이메일 외 회원가입 시 입력된 모든 회원정보 수정이 가능합니다.</a>
+
+                <img class="image" alt="setting" th:src="@{/resources/images/myPageModify3.png}">
+                <a class="text">회원정보 수정 후 <b>확인</b> 버튼 클릭 시 수정이 완료됩니다.</a>
+                <a class="text last-line">하단 <b>바로가기</b> 버튼 클릭 시 메인 페이지로 이동할 수 있습니다.</a>
+
+                <img class="image" alt="setting" th:src="@{/resources/images/myPagePassword.png}">
+                <a class="text">비밀번호 재설정은 <b>로그인 페이지 하단</b> 비밀번호 재설정 버튼과 <b>마이페이지</b> 비밀번호 재설정 메뉴, 두 곳에서 가능하며,</a>
+                <a class="text last-line">회원의 개인정보 보호를 위하여 <b>이메일 인증</b> 후 가능합니다.</a>
+
+                <img class="image" alt="setting" th:src="@{/resources/images/myPagePassword2.png}">
+                <a class="text last-line">이메일 입력 후 <b>확인</b> 버튼 클릭 시 해당 이메일로 인증이 가능한 링크가 전송됩니다.</a>
+
+                <img class="image" alt="setting" th:src="@{/resources/images/myPagePassword3.png}">
+                <a class="text">이메일 인증에 성공하면 상단 사진과 같이 비밀번호 입력 칸이 생성되며,</a>
+                <a class="text last-line"><b>비밀번호 확인</b> 버튼 클릭 시 비밀번호 재설정이 완료됩니다.</a>
+
+                <img class="image" alt="setting" th:src="@{/resources/images/myPageOrder.png}">
+                <a class="text">주문/배송 조회 메뉴에서 <b>SHOP</b>에서 구매한 상품의 주문 내역 및 배송 현황을 확인할 수 있습니다. </a>
+                <a class="text last-line">상품의 <b>사진</b> 클릭 시 해당 상품 상세 페이지로 이동하며, <b>상세보기</b> 클릭 시 해당 주문의 상세 정보 페이지로 이동합니다.</a>
+
+
+                <img class="image" alt="setting" th:src="@{/resources/images/orderDetail.png}">
+                <a class="text">해당 주문 내역의 <b>상세정보</b> 확인이 가능하며, <b>목록</b> 클릭 시 주문/배송 조회 메뉴로 이동합니다.</a>
+
+                <img class="image" alt="setting" th:src="@{/resources/images/cart.png}">
+                <a class="text">마이페이지 <b>장바구니</b> 메뉴 클릭 시 표시되는 페이지입니다.</a>
+                <a class="text last-line">해당 페이지에서 선택 상품 구매 또는 전체 상품 구매가 가능합니다.</a>
+
+                <img class="image" alt="setting" th:src="@{/resources/images/myArticle.png}">
+                <a class="text">게시글 메뉴에서 본인이 <b>자유게시판</b>에 쓴 게시글의 확인이 가능합니다.</a>
+                <a class="text last-line"><b>제목</b> 클릭 시 해당 게시글로 이동하며, 수정 및 삭제가 가능합니다.</a>
+
+                <img class="image" alt="setting" th:src="@{/resources/images/myQna.png}">
+                <a class="text">문의내역 메뉴에서 본인이 <b>Q&A</b> 게시판에 문의한 내역 확인이 가능합니다.</a>
+                <a class="text last-line"><b>제목</b> 클릭 시 해당 게시글로 이동하며, 수정 및 삭제가 가능합니다.</a>
+
+                <img class="image" alt="setting" th:src="@{/resources/images/myPageDelete.png}">
+                <a class="text"><b>회원 탈퇴</b> 버튼 클릭 시 탈퇴가 진행되며, 모든 정보가 사라집니다.</a>
+                <a class="text last-line">탈퇴 시 모든 정보 및 게시글은 삭제되며 복구가 불가능합니다.</a>
+
+                <img class="image" alt="setting" th:src="@{/resources/images/store.png}" id="storeMenu">
+                <a class="text"><b>SHOP</b> 상품 상세 페이지 입니다.</a>
+                <a class="text last-line">색상 및 사이즈 선택 후 <b>ADD TO CART</b> 버튼 클릭 시 장바구니에 선택한 옵션의 상품이 입력됩니다.</a>
+
+                <img class="image" alt="setting" th:src="@{/resources/images/storeCart.png}">
+                <a class="text">상품 옵션 선택 후 장바구니에 상품을 넣은 후 화면입니다.</a>
+                <a class="text last-line"><b>예</b> 클릭 시 장바구니로 이동이 가능합니다.</a>
+
+                <img class="image" alt="setting" th:src="@{/resources/images/storeMenu.png}">
+                <a class="text">상단의 <b>detail</b> | <b>review</b> | <b>contact</b> 클릭 시 해당 위치로 이동이 가능합니다.</a>
+                <a class="text last-line"><b>상품정보 더보기</b> 클릭 시 숨겨져 있던 나머지 상세 사진들이 표시되며, <b>상품정보 접기</b>를 클릭하여 간략화 또한 가능합니다.</a>
+
+                <img class="image" alt="setting" th:src="@{/resources/images/storeReview.png}">
+                <a class="text">작성 된 리뷰의 <b>평균 별점</b>을 한눈에 볼 수 있게 하였으며, </a>
+                <a class="text">고객센터 <b>전화번호</b> 클릭 시 통화 연결이 가능하고, <b>홈페이지</b> 클릭 시 해당 브랜드 홈페이지로 이동합니다. </a>
+                <a class="text last-line">리뷰 작성 시 회원의 <b>닉네임</b>이 표시되게 하였으며, 상품 구매 후 <b>배송 완료</b> 된 상품에만 리뷰 작성 및 수정이 가능합니다.</a>
+
+
+            </div>
+
+            <a class="back" th:href="@{home}">Go to Home</a>
+        </div>
+
+    </div>
+
+
+</main>
+</body>
+</html>
