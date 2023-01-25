@@ -480,31 +480,23 @@ body > main > section > .main-project > .--content > .projects > .content > ul {
 
 body > main > section > .main-project > .--content > .projects > .content > ul > li {
     list-style: none;
-    margin-top: 0.6rem;
+    margin-top: 0.4rem;
     margin-left: -0.5rem;
     font-family: none;
-}
-
-body > main > section > .main-project > .--content > .projects > .content > ul > li:nth-child(2),
-body > main > section > .main-project > .--content > .projects > .content > ul > .text.last-line {
-    margin-bottom: 0.3rem;
 }
 
 body > main > section > .main-project > .--content > .projects > .content > ul > .name {
     font-weight: 800;
     font-size: 1.3rem;
-    margin-top: 3rem;
+    margin-top: 2.3rem;
+    margin-bottom: 0.5rem;
 }
 
 body > main > section > .main-project > .--content > .projects > .content > ul > .title {
     font-weight: 800;
     font-size: 1rem;
-    margin-top: 2rem;
-
-}
-
-body > main > section > .main-project > .--content > .projects > .content > ul > li > a > i:hover {
-    color: rgb(255, 151, 0);
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
 }
 
 body > main > section > .main-project > .--content > .projects > .content > ul > .text:hover {
@@ -513,11 +505,31 @@ body > main > section > .main-project > .--content > .projects > .content > ul >
     cursor: pointer;
 }
 
-body > main > section > .main-project > .--content > .projects > .content > ul > li > a > i {
+body > main > section > .main-project > .--content > .projects > .content > ul > .iconContainer{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin-left: -0.8rem;
+    margin-top: 0.5rem;
+}
+
+body > main > section > .main-project > .--content > .projects > .content > ul > .iconContainer >li > a > i {
     color: rgb(0, 0, 0);
     margin-left: 0.5rem;
-    font-size: 1rem;
-    margin-bottom: 1.3rem;
+}
+
+body > main > section > .main-project > .--content > .projects > .content > ul > .iconContainer >li > a > .web{
+    margin-top: 0.1rem;
+    font-size: 1.3rem;
+}
+
+body > main > section > .main-project > .--content > .projects > .content > ul > .iconContainer >li > a > .github{
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
+}
+
+body > main > section > .main-project > .--content > .projects > .content > ul > .iconContainer >li > a > i:hover {
+    color: rgb(255, 151, 0);
 }
 
 body > main > section > .footer > .--content {
