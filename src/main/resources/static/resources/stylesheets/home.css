@@ -6,7 +6,7 @@ html {
     font-family: 'Montserrat', sans-serif;
 }
 
-body{
+body {
     top: 0;
     left: 0;
     width: 100%;
@@ -50,7 +50,7 @@ body > .header > .content {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    border-bottom: 1px solid rgb(174,174,174);
+    border-bottom: 1px solid rgb(174, 174, 174);
     padding: 0.5rem 0;
 }
 
@@ -156,6 +156,7 @@ body > main > section > .main-intro > .--content > .contact > .name {
     flex-direction: column;
 }
 
+
 body > main > section > .main-intro > .--content > .contact > .content {
     display: flex;
     align-items: flex-start;
@@ -193,6 +194,7 @@ body > main > section > .main-intro > .--content > .contact > .content > a > .gi
     margin-left: 0.2rem;
     width: 1.8rem;
     margin-bottom: -0.4rem;
+    margin-top: -0.3rem;
     cursor: pointer;
 }
 
@@ -221,7 +223,7 @@ body > main > section > .main-aboutMe > .--content > .content {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-bottom: 10rem;
+    margin-bottom: 5rem;
 }
 
 body > main > section > .main-aboutMe > .--content > .content > .profile {
@@ -263,7 +265,7 @@ body > main > section > .main-skills {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    background-color: rgb(241, 243, 245);
+    background-color: rgb(250, 250, 251);
 }
 
 body > main > section > .main-skills > .--content {
@@ -303,7 +305,7 @@ body > main > section > .main-skills > .--content > .skills4 > .content {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
     border-radius: 0.9rem;
     padding-top: 1.2rem;
     padding-right: 1.5rem;
@@ -394,7 +396,7 @@ body > main > section > .main-project {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    background-color: rgb(241, 243, 245);
+    background-color: rgb(250, 250, 251);
     padding-bottom: 10rem;
 }
 
@@ -435,7 +437,7 @@ body > main > section > .main-project > .--content > .title-container > .explain
     margin-right: 0.5rem;
 }
 
-body > main > section > .main-project > .--content > .projects > .content > a{
+body > main > section > .main-project > .--content > .projects > .content > a {
     text-decoration: none;
 }
 
@@ -446,13 +448,13 @@ body > main > section > .main-project > .--content > .projects > .content > a > 
     cursor: pointer;
 }
 
-body > main > section > .main-project > .--content > .projects > .content > a>.image:hover {
+body > main > section > .main-project > .--content > .projects > .content > a > .image:hover {
     transform: translateY(-30px);
     cursor: pointer;
     transition: all 0.4s ease 0s;
 }
 
-body > main > section > .main-project > .--content > .projects > .content > a>.image:first-child {
+body > main > section > .main-project > .--content > .projects > .content > a > .image:first-child {
     margin-right: 1rem;
 }
 
@@ -473,7 +475,7 @@ body > main > section > .main-project > .--content > .projects > .content > ul {
     align-items: flex-start;
     justify-content: flex-start;
     flex-direction: column;
-    width: 17rem;
+    width: 17.2rem;
     border-radius: 1.2rem;
     padding-right: 2rem;
 }
@@ -486,10 +488,25 @@ body > main > section > .main-project > .--content > .projects > .content > ul >
 }
 
 body > main > section > .main-project > .--content > .projects > .content > ul > .name {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+}
+
+body > main > section > .main-project > .--content > .projects > .content > ul > .name > .dios {
     font-weight: 800;
     font-size: 1.3rem;
-    margin-top: 2.3rem;
-    margin-bottom: 0.5rem;
+    margin-right: 1rem;
+}
+
+body > main > section > .main-project > .--content > .projects > .content > ul > .name > .team {
+    font-size: 0.8rem;
+    background-color: rgb(233, 236, 239);
+    padding: 0.3rem 0.6rem;
+    border-radius: 0.2rem;
+    margin-bottom: 0.2rem;
 }
 
 body > main > section > .main-project > .--content > .projects > .content > ul > .title {
@@ -505,30 +522,29 @@ body > main > section > .main-project > .--content > .projects > .content > ul >
     cursor: pointer;
 }
 
-body > main > section > .main-project > .--content > .projects > .content > ul > .iconContainer{
+body > main > section > .main-project > .--content > .projects > .content > ul > .iconContainer {
     display: flex;
     list-style: none;
     padding: 0;
     margin-left: -0.8rem;
-    margin-top: 0.5rem;
 }
 
-body > main > section > .main-project > .--content > .projects > .content > ul > .iconContainer >li > a > i {
+body > main > section > .main-project > .--content > .projects > .content > ul > .iconContainer > li > a > i {
     color: rgb(0, 0, 0);
     margin-left: 0.5rem;
 }
 
-body > main > section > .main-project > .--content > .projects > .content > ul > .iconContainer >li > a > .web{
+body > main > section > .main-project > .--content > .projects > .content > ul > .iconContainer > li > a > .web {
     margin-top: 0.1rem;
     font-size: 1.3rem;
 }
 
-body > main > section > .main-project > .--content > .projects > .content > ul > .iconContainer >li > a > .github{
+body > main > section > .main-project > .--content > .projects > .content > ul > .iconContainer > li > a > .github {
     font-size: 1.5rem;
     margin-right: 0.5rem;
 }
 
-body > main > section > .main-project > .--content > .projects > .content > ul > .iconContainer >li > a > i:hover {
+body > main > section > .main-project > .--content > .projects > .content > ul > .iconContainer > li > a > i:hover {
     color: rgb(255, 151, 0);
 }
 
@@ -543,7 +559,7 @@ body > main > section > .footer > .--content {
 }
 
 body > main > section > .footer > .--content > .title {
-    font-size: 2rem;
+    font-size: 1.8rem;
     margin-bottom: 2.2rem;
 }
 
