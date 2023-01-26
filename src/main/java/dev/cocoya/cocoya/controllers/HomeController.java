@@ -10,7 +10,7 @@ import org.springframework.web.servlet.ModelAndView;
 @RequestMapping(value = "/")
 public class HomeController {
 
-    @RequestMapping(value = "/home",
+    @RequestMapping(value = "/",
             method = RequestMethod.GET,
             produces = MediaType.TEXT_HTML_VALUE)
     public ModelAndView getHome(){
