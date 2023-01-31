@@ -138,3 +138,54 @@ body > main > .main > .--content > .list > .text:hover {
     color: rgb(87, 87, 87);
     cursor: pointer;
 }
+
+body > main > .main > .--content > .do-gif {
+    flex-direction: column;
+    display: flex;
+    margin-top: 5rem;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+body > main > .main > .--content > .do-gif > .text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration-line: none;
+    font-family: none;
+    color: rgb(142 142 142);
+    margin-top: 1rem;
+}
+
+body > main > .main > .--content > .do-gif > .text:hover {
+    text-decoration: underline;
+}
+
+body > main > .main > .--content > .do-gif > .gif {
+    color: transparent;
+    width: 100%;
+    height: auto;
+    max-width: 800px;
+    margin: 0px auto;
+    display: block;
+}
+
+body > main > .main > .--content > .content-text {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    font-family: none;
+    margin-top: 7rem;
+    width: 54rem;
+    line-height: 2;
+    flex-direction: column;
+    padding-bottom: 5rem;
+    border-bottom: 1px solid rgb(174, 174, 174);
+}
+
+
+body > main > .main > .--content > .content-text > .sub-title {
+    font-size: 1.1rem;
+    color: rgb(134, 134, 134);
+    font-weight: 700;
+}

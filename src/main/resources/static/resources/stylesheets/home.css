@@ -68,7 +68,8 @@ body > .header > .content > .logo {
 body > .header > .content > .intro,
 body > .header > .content > .aboutMe,
 body > .header > .content > .skills,
-body > .header > .content > .projects {
+body > .header > .content > .projects,
+body > .header > .content > .contact {
     background-color: inherit;
     color: rgb(0, 0, 0);
     font-size: 1.1rem;
@@ -81,14 +82,16 @@ body > .header > .content > .projects {
 body > .header > .content > .intro:hover,
 body > .header > .content > .aboutMe:hover,
 body > .header > .content > .skills:hover,
-body > .header > .content > .projects:hover {
+body > .header > .content > .projects:hover,
+body > .header > .content > .contact:hover{
     color: rgb(255, 151, 0);
 }
 
 body > .header > .content > .intro.selected,
 body > .header > .content > .aboutMe.selected,
 body > .header > .content > .skills.selected,
-body > .header > .content > .projects.selected {
+body > .header > .content > .projects.selected,
+body > .header > .content > .contact.selected {
     color: rgb(255, 151, 0);
 }
 
@@ -559,7 +562,7 @@ body > main > section > .footer > .--content {
     justify-content: center;
     flex-direction: column;
     padding-bottom: 10rem;
-    padding-top: 5rem;
+    padding-top: 18rem;
 }
 
 body > main > section > .footer > .--content > .title {
@@ -601,4 +604,16 @@ body > main > section > .footer > .--content > .contact-container > .contact-con
     margin-left: -6.8rem;
     color: rgb(0, 0, 0);
     text-decoration: none;
+}
+
+body > main > .footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: none;
+    flex-direction: column;
+    margin-bottom: 3rem;
+    color: rgb(146 146 146);
+    font-size: 0.9rem;
+
 }
