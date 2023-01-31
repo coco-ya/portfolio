@@ -27,4 +27,13 @@ public class HomeController {
 
         return modelAndView;
     }
+
+    @RequestMapping(value = "/matzip",
+            method = RequestMethod.GET,
+            produces = MediaType.TEXT_HTML_VALUE)
+    public ModelAndView getMatzip(){
+        ModelAndView modelAndView = new ModelAndView("matzip");
+
+        return modelAndView;
+    }
 }

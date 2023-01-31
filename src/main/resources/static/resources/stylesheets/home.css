@@ -105,6 +105,7 @@ body > main > section > .main-intro > .--content {
     min-width: 73rem;
     align-items: center;
     margin-top: 9.5rem;
+    margin-bottom: 3rem;
 }
 
 body > main > section > .main-intro > .--content > .information {
@@ -181,7 +182,6 @@ body > main > section > .main-intro > .--content > .contact > .content > .image:
     margin-right: 0.5rem;
 }
 
-
 body > main > section > .main-intro > .--content > .contact > .content > a > .tistory {
     margin-top: 0.2rem;
     margin-left: 0.2rem;
@@ -218,12 +218,12 @@ body > main > section > .main-aboutMe > .--content > .title {
 }
 
 body > main > section > .main-aboutMe > .--content > .content {
-    width: 66rem;
+    width: 68rem;
     margin-top: 4rem;
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-bottom: 5rem;
+    margin-bottom: 7rem;
 }
 
 body > main > section > .main-aboutMe > .--content > .content > .profile {
@@ -448,6 +448,11 @@ body > main > section > .main-project > .--content > .projects > .content > a > 
     cursor: pointer;
 }
 
+body > main > section > .main-project > .--content > .projects > .content > a > .image.matzip {
+    width: 46.4rem;
+    height: 25rem;
+}
+
 body > main > section > .main-project > .--content > .projects > .content > a > .image:hover {
     transform: translateY(-30px);
     cursor: pointer;
@@ -495,7 +500,7 @@ body > main > section > .main-project > .--content > .projects > .content > ul >
     margin-bottom: 0.5rem;
 }
 
-body > main > section > .main-project > .--content > .projects > .content > ul > .name > .dios {
+body > main > section > .main-project > .--content > .projects > .content > ul > .name > .main-title {
     font-weight: 800;
     font-size: 1.3rem;
     margin-right: 1rem;
@@ -519,7 +524,6 @@ body > main > section > .main-project > .--content > .projects > .content > ul >
 body > main > section > .main-project > .--content > .projects > .content > ul > .text:hover {
     text-decoration: underline;
     color: rgb(87, 87, 87);
-    cursor: pointer;
 }
 
 body > main > section > .main-project > .--content > .projects > .content > ul > .iconContainer {
