@@ -1,4 +1,44 @@
 @charset "UTF-8";
+/*화면 크기 848px 이하일 때 */
+@media screen and (max-width: 848px) {
+    body > main > .main > .--content > .title-container {
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    body > main > .main > .--content > .list {
+        align-items: center;
+    }
+
+    body > main > .main > .--content > .content-text {
+        align-items: center;
+        width: 32rem;
+    }
+    body > main > .main > .--content > .content-text > .image {
+        width: 38rem;
+    }
+
+    body > main > .main > .--content > .do-gif > .gif {
+        max-width: 39rem;
+    }
+}
+@media screen and (min-width: 851px) {
+    body > main > .main > .--content > .list {
+        align-items: flex-start;
+    }
+    body > main > .main > .--content > .content-text {
+        align-items: flex-start;
+        width: 54rem;
+    }
+    body > main > .main > .--content > .content-text > .image {
+        width: 50rem;
+    }
+
+    body > main > .main > .--content > .do-gif > .gif {
+        max-width: 51rem;
+    }
+}
 
 html {
     overflow: hidden;
@@ -110,7 +150,7 @@ body > main > .main > .--content > .title-container > .main-title {
 body > main > .main > .--content > .list {
     margin-left: 5rem;
     display: flex;
-    align-items: flex-start;
+    /*align-items: flex-start;*/
     justify-content: flex-start;
     flex-direction: column;
     margin-top: 2rem;
@@ -163,20 +203,19 @@ body > main > .main > .--content > .do-gif > .text:hover {
 
 body > main > .main > .--content > .do-gif > .gif {
     color: transparent;
-    width: 100%;
     height: auto;
-    max-width: 800px;
+    /*max-width: 51rem; */
     margin: 0px auto;
     display: block;
 }
 
 body > main > .main > .--content > .content-text {
     display: flex;
-    align-items: flex-start;
+    /*align-items: flex-start;*/
     justify-content: flex-start;
     font-family: none;
     margin-top: 7rem;
-    width: 54rem;
+    /*width: 54rem;*/
     line-height: 2;
     flex-direction: column;
     padding-bottom: 5rem;
@@ -200,15 +239,19 @@ body > main > .main > .--content > .content-text > .title {
 }
 
 body > main > .main > .--content > .content-text > .image {
-    width: 50rem;
+    /*width: 50rem;*/
     margin-bottom: 1rem;
     padding-top: 70px;
 }
 
 body > main > .main > .--content > .content-text > .image.email{
     width: 27rem;
-    margin-left: 12.5rem;
+}
 
+@media screen and (min-width: 851px) {
+    body > main > .main > .--content > .content-text > .image.email{
+        margin-left: 12.5rem;
+    }
 }
 
 body > main > .main > .--content > .back{

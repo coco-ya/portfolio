@@ -1,4 +1,136 @@
 @charset "UTF-8";
+@media screen and (max-width: 770px) {
+    body > .header > .content > .intro,
+    body > .header > .content > .aboutMe,
+    body > .header > .content > .skills,
+    body > .header > .content > .projects,
+    body > .header > .content > .contact {
+        display: none;
+    }
+
+    body > .header > .content > .list {
+        display: flex;
+        padding-right: 2rem;
+        font-size: 1.3rem;
+    }
+
+
+}
+
+@media screen and (min-width: 771px) {
+    body > .header > .content > .list {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    body > main > section > .main-intro > .--content {
+        flex-direction: column;
+    }
+
+    body > main > section > .main-aboutMe > .--content > .content {
+        flex-direction: column;
+    }
+
+    body > main > section > .main-aboutMe > .--content > .title {
+        display: flex;
+        justify-content: center;
+    }
+
+    body > main > section > .main-aboutMe > .--content > .content > .text {
+        margin-top: -3rem;
+    }
+
+    body > main > section > .main-skills > .--content > .title {
+        display: flex;
+        justify-content: center;
+    }
+
+    body > main > section > .main-skills > .--content > .title {
+        display: flex;
+        justify-content: center;
+    }
+
+    body > main > section > .main-skills > .--content > .skills {
+        margin-top: 4rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    body > main > section > .main-skills > .--content > .skills > .content:last-child,
+    body > main > section > .main-skills > .--content > .skills2 > .content:last-child,
+    body > main > section > .main-skills > .--content > .skills3 > .content:last-child,
+    body > main > section > .main-skills > .--content > .skills4 > .content:last-child {
+        margin-left: -3rem;
+        margin-top: 2rem;
+    }
+
+    body > main > section > .main-skills > .--content > .skills2,
+    body > main > section > .main-skills > .--content > .skills3,
+    body > main > section > .main-skills > .--content > .skills4 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 2rem;
+    }
+
+    body > main > section > .main-project > .--content > .title-container > .title {
+        display: flex;
+        justify-content: center;
+    }
+
+    body > main > section > .main-project > .--content > .title-container > .explain {
+        display: flex;
+        justify-content: center;
+    }
+
+    body > main > section > .main-project > .--content > .title-container > .explain:last-child {
+        margin-left: -2.6rem;
+    }
+
+    body > main > section > .main-project > .--content > .projects > .content {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    body > main > section > .main-project > .--content > .projects > .content > ul > .iconContainer {
+        margin-bottom: 2rem;
+    }
+
+    body > main > section > .main-project > .--content > .projects > .content > a > .image.matzip {
+        width: 37.4rem;
+        height: 20rem;
+    }
+
+    body > main > section > .main-project > .--content > .projects > .content > a {
+        display: flex;
+    }
+
+    body > main > section > .main-project > .--content > .projects > .content > a > .image {
+        width: 20rem;
+        height: 22rem;
+        border-radius: 1.8rem;
+        cursor: pointer;
+    }
+}
+
+@media screen and (min-width: 1001px) {
+    body > main > section > .main-intro > .--content {
+        flex-direction: row;
+    }
+
+    body > main > section > .main-aboutMe > .--content > .content {
+        flex-direction: row;
+    }
+
+    body > main > section > .main-aboutMe > .--content > .content > .text {
+        margin-top: -6rem;
+    }
+}
 
 html {
     overflow: hidden;
@@ -65,6 +197,7 @@ body > .header > .content > .logo {
     cursor: pointer;
 }
 
+
 body > .header > .content > .intro,
 body > .header > .content > .aboutMe,
 body > .header > .content > .skills,
@@ -83,7 +216,8 @@ body > .header > .content > .intro:hover,
 body > .header > .content > .aboutMe:hover,
 body > .header > .content > .skills:hover,
 body > .header > .content > .projects:hover,
-body > .header > .content > .contact:hover{
+body > .header > .content > .contact:hover,
+body > .header > .content > .list:hover {
     color: rgb(255, 151, 0);
 }
 
@@ -102,9 +236,9 @@ body > main > .section > .main-intro {
     justify-content: center;
 }
 
+
 body > main > section > .main-intro > .--content {
     display: flex;
-    flex-direction: row;
     min-width: 73rem;
     align-items: center;
     margin-top: 9.5rem;
@@ -221,10 +355,9 @@ body > main > section > .main-aboutMe > .--content > .title {
 }
 
 body > main > section > .main-aboutMe > .--content > .content {
+    display: flex;
     width: 68rem;
     margin-top: 4rem;
-    display: flex;
-    flex-direction: row;
     align-items: center;
     margin-bottom: 7rem;
 }
@@ -249,7 +382,7 @@ body > main > section > .main-aboutMe > .--content > .content > .text {
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
-    margin-top: -6rem;
+    /*margin-top: -6rem;*/
     margin-left: 2rem;
 }
 
@@ -281,24 +414,27 @@ body > main > section > .main-skills > .--content > .title {
     font-weight: 700;
     font-size: 2.4rem;
 }
+@media screen and (min-width: 1001px) {
+    body > main > section > .main-skills > .--content > .skills {
+        margin-top: 4rem;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: row;
 
-body > main > section > .main-skills > .--content > .skills {
-    margin-top: 4rem;
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-direction: row;
-
+    }
 }
 
-body > main > section > .main-skills > .--content > .skills2,
-body > main > section > .main-skills > .--content > .skills3,
-body > main > section > .main-skills > .--content > .skills4 {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-direction: row;
-    margin-top: 2rem;
+@media screen and (min-width: 1001px) {
+    body > main > section > .main-skills > .--content > .skills2,
+    body > main > section > .main-skills > .--content > .skills3,
+    body > main > section > .main-skills > .--content > .skills4 {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: row;
+        margin-top: 2rem;
+    }
 }
 
 body > main > section > .main-skills > .--content > .skills > .content,
@@ -443,7 +579,7 @@ body > main > section > .main-project > .--content > .title-container > .explain
 body > main > section > .main-project > .--content > .projects > .content > a {
     text-decoration: none;
 }
-
+@media screen and (min-width: 1001px) {
 body > main > section > .main-project > .--content > .projects > .content > a > .image {
     width: 23rem;
     height: 26rem;
@@ -451,9 +587,11 @@ body > main > section > .main-project > .--content > .projects > .content > a > 
     cursor: pointer;
 }
 
-body > main > section > .main-project > .--content > .projects > .content > a > .image.matzip {
-    width: 46.4rem;
-    height: 25rem;
+
+    body > main > section > .main-project > .--content > .projects > .content > a > .image.matzip {
+        width: 46.4rem;
+        height: 25rem;
+    }
 }
 
 body > main > section > .main-project > .--content > .projects > .content > a > .image:hover {
@@ -606,7 +744,7 @@ body > main > section > .footer > .--content > .contact-container > .contact-con
     text-decoration: none;
 }
 
-body > main > .footer{
+body > main > .footer {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -617,3 +755,4 @@ body > main > .footer{
     font-size: 0.9rem;
 
 }
+
