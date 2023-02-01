@@ -1,57 +1,99 @@
 <!DOCTYPE html>
 <html lang="ko" xmlns:th="http://www.thymeleaf.org">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>matzipmap Project</title>
-  <link rel="stylesheet" th:href="@{/resources/stylesheets/matzip.css}">
-  <script src="https://kit.fontawesome.com/282afddd53.js" crossorigin="anonymous"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>matzipmap Project</title>
+    <link rel="stylesheet" th:href="@{/resources/stylesheets/matzip.css}">
+    <script src="https://kit.fontawesome.com/282afddd53.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
 
 </head>
 <body>
 <header class="header" id="header">
-  <div class="content" id="headerContainer">
-    <a class="logo" id="logo" href="/">PORTFOLIO</a>
-  </div>
+    <div class="content" id="headerContainer">
+        <a class="logo" id="logo" href="/">PORTFOLIO</a>
+    </div>
 </header>
 <main>
 
-  <div class="main">
-    <div class="--content content">
-      <div class="title-container">
-        <a class="mini-title">음식점 검색 웹 사이트</a>
-        <a class="main-title">matzip map</a>
-      </div>
+    <div class="main">
+        <div class="--content content">
+            <div class="title-container">
+                <a class="mini-title">음식점 검색 웹 사이트</a>
+                <a class="main-title">matzip map</a>
+            </div>
 
-      <div class="list">
-        <a class="title">List</a>
-        <a class="text" href="#">1. 소셜 로그인</a>
-        <a class="text" href="#">2. 음식점 상세페이지</a>
-        <a class="text" href="#">3. 음식점 검색</a>
-        <a class="text" href="#">4. 리뷰</a>
-      </div>
+            <div class="list">
+                <a class="title">List</a>
+                <a class="text" href="#loginMenu">1. 소셜 로그인</a>
+                <a class="text" href="#detail">2. 상세페이지</a>
+                <a class="text" href="#search">3. 음식점 검색</a>
+                <a class="text" href="#review">4. 리뷰</a>
+            </div>
 
-      <a class="do-gif">
-        <img class="gif" alt="setting" th:src="@{/resources/images/matzipRun.gif}">
-      </a>
+            <a class="do-gif">
+                <img class="gif" alt="setting" th:src="@{/resources/images/matzipGif.gif}">
+            </a>
 
-      <div class="content-text">
-        <a class="title">프로젝트 설명</a>
-        <a class="text">팀 프로젝트 <b>DIOS</b>는 운동 관련 웹 사이트입니다.</a>
-        <a class="text"><b>머신러닝</b>을 활용하여 세 종류의 운동이 가능하며, 운동 후 기록할 수 있는 <b>기록장</b>과 <b>커뮤니티</b>를 이용하여 소통이
-          가능합니다.</a>
+            <div class="content-text">
+                <a class="title">프로젝트 설명</a>
+                <a class="text">개인 프로젝트 <b>matzip map</b>은 음식점 검색 웹 사이트입니다.</a>
+                <a class="text">접속자의 위치를 인식하여 현재 위치 근처의 음식점이 표시됩니다.</a>
+                <a class="text">해당 음식점의 영업시간과 마감시간, 영업 중 또는 영업 종료를 <b>메인 페이지</b>에서 확인이 가능하도록 하였습니다.</a>
+                <a class="text">소셜 로그인이 가능하며, 로그인 후 리뷰 작성이 가능합니다.</a>
+
+                <img class="image" alt="setting" th:src="@{/resources/images/matzip.png}">
+                <a class="text"><b>matzip map</b>의 메인 페이지입니다.</a>
+
+                <a class="text">사용자의 현재 위치를 자동으로 인식하여 현재 위치 근처의 음식점 리스트가 <b>좌측</b>에 표시됩니다.</a>
+                <a class="text">지도를 움직여 현재 위치가 아닌 다른 위치의 음식점 또한 확인이 가능합니다.</a>
+
+                <img class="image" alt="setting" th:src="@{/resources/images/matzipKaKao.png}" id="loginMenu">
+                <a class="text">검색 창 <b>하단</b> 로그인을 클릭 했을 때 표시되는 <b>소셜 로그인</b> 페이지입니다.</a>
+                <a class="text"> 로그인을 하지 않은 상태에서 음식점 상세페이지를 클릭 시 "<i>로그인 후 리뷰를 작성할 수 있습니다.</i>" 가 표시됩니다.</a>
+
+                <img class="image" alt="setting" id="detail" th:src="@{/resources/images/matzipDetail.png}">
+                <a class="text">좌측 리스트 또는 지도의 아이콘을 클릭 시 해당 음식점의 위치로 이동하며, <b>상세 정보</b>를 확인할 수 있습니다.</a>
+                <a class="text">해당 칸에서 주소, 영업시간, 전화번호 등과 같은 음식점의 <b>상세 정보</b>와 <b>리뷰 작성</b> 및 <b>확인</b>이 가능합니다.</a>
+
+                <img class="image" alt="setting" id="search" th:src="@{/resources/images/matzipSearch.png}">
+                <a class="text">검색란에 <b>키워드</b>를 입력하면 해당 <b>키워드</b>를 포함한 음식점 리스트들이 표시됩니다.</a>
+                <a class="text">검색 키워드는 <b>첫 글자</b> 뿐만 아니라 <b>중간 글자</b>를 입력 시에도 검색이 가능합니다.</a>
+
+                <img class="image" alt="setting" id="review" th:src="@{/resources/images/matzipReview.png}">
+                <a class="text">로그인 시 리뷰 작성 칸이 표시되며 작성이 가능합니다.</a>
+                <a class="text">리뷰 작성 시 <b>별점</b>과 <b>내용</b>은 필수적이며, <b>이미지</b>는 선택적입니다.</a>
+
+                <img class="image" alt="setting" th:src="@{/resources/images/matzipStar.png}">
+                <a class="text">리뷰 작성 시 <b>별점</b>을 선택하지 않으면 경고창이 표시되며, 리뷰 작성이 불가합니다.</a>
+
+                <img class="image" alt="setting" th:src="@{/resources/images/matzipContent.png}">
+                <a class="text">별점과 마찬가지로 <b>내용</b>을 입력하지 않으면 경고창이 표시되며, 리뷰 작성이 불가합니다.</a>
+
+                <img class="image" alt="setting" th:src="@{/resources/images/matzipReviewCom.png}">
+                <a class="text">리뷰 작성에 성공했을 때의 화면입니다.</a>
+                <a class="text">"<i>리뷰를 등록하였습니다.</i> " 라는 텍스트가 표시된 후 방문자 리뷰에서 확인이 가능합니다.</a>
+
+                <img class="image" alt="setting" th:src="@{/resources/images/matzipNoReview.png}">
+                <a class="text">등록된 리뷰가 없을 때에는 "<i>아직 등록된 리뷰가 없습니다.</i> " 가 표시되도록 하였습니다.</a>
+
+
+
+
+
+
+            </div>
+
+
+            <a class="back" href="/">Go to Home</a>
+        </div>
 
     </div>
-
-
-    </div>
-
-  </div>
 
 
 </main>

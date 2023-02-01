@@ -189,3 +189,25 @@ body > main > .main > .--content > .content-text > .sub-title {
     color: rgb(134, 134, 134);
     font-weight: 700;
 }
+
+body > main > .main > .--content > .content-text > .title {
+    font-weight: bold;
+    font-size: 1.7rem;
+}
+
+body > main > .main > .--content > .content-text > .image {
+    width: 50rem;
+    margin-bottom: 1rem;
+    padding-top: 70px;
+}
+
+body > main > .main > .--content > .back{
+    text-decoration: none;
+    color: rgb(0,0,0);
+    margin-top: 3rem;
+    font-size: 1.2rem;
+}
+
+body > main > .main > .--content > .back:hover{
+    color: rgb(255, 151, 0);
+}
