@@ -29,7 +29,7 @@ const observer = new IntersectionObserver(entries => {
     });
 }, {
     root: document.body,
-    threshold: 0.5, // 얼마나 보였을 때 해당 위치라고 인식할지
+    threshold: 0.35, // 얼마나 보였을 때 해당 위치라고 인식할지
     rootMargin: '0px'
 });
 
