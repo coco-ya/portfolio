@@ -37,3 +37,10 @@ document.getElementById('sectionContainer').querySelectorAll(':scope > [rel="sec
     observer.observe(section); //함수 사용
 });
 
+//화면 줄었을 때 세줄
+function menuToggle() {
+    document.getElementById('menu').classList.toggle('show');
+}
+
+document.getElementById('toggleBtn').addEventListener('click', menuToggle);
+

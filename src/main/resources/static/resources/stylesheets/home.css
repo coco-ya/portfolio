@@ -8,19 +8,19 @@
 /*        display: none;*/
 /*    }*/
 
-/*    body > .header > .content > .list {*/
+/*    body > .header  > .list {*/
 /*        float: right;*/
-/*        font-size: 1.8rem;*/
+/*        height: 70px;*/
+/*        line-height: 70px;*/
+/*        font-size: 32px;*/
 /*        cursor: pointer;*/
-/*        margin-right: 2rem;*/
+/*        position: fixed;*/
 
 /*    }*/
-
-
 /*}*/
 
 /*@media screen and (min-width: 771px) {*/
-/*    body > .header > .content > .list {*/
+/*    body > .header  > .list {*/
 /*        display: none;*/
 /*    }*/
 /*}*/
@@ -134,6 +134,39 @@
     }
 }
 
+@media screen and (max-width: 540px) {
+    body > main > section > .main-intro > .--content > .contact {
+        width: 21rem;
+    }
+
+    body > main > section > .main-aboutMe > .--content > .content > .text > a {
+        font-size: 0.9rem;
+    }
+
+    body > main > section > .main-project > .--content > .projects > .content > a > .image {
+        width: 14rem;
+        height: 16rem;
+    }
+
+    body > main > section > .main-project > .--content > .projects > .content > ul > li {
+        font-size: 0.9rem;
+    }
+
+    body > main > section > .main-project > .--content > .projects > .content > a > .image.matzip {
+        width: 28.4rem;
+        height: 16rem;
+    }
+}
+@media screen and (min-width: 541px) {
+    body > main > section > .main-intro > .--content > .contact {
+        width: 25rem;
+    }
+
+    body > main > section > .main-aboutMe > .--content > .content > .text > a {
+        font-size: 1.1rem;
+    }
+}
+
 html {
     overflow: hidden;
     height: 100%;
@@ -217,8 +250,7 @@ body > .header > .content > .intro:hover,
 body > .header > .content > .aboutMe:hover,
 body > .header > .content > .skills:hover,
 body > .header > .content > .projects:hover,
-body > .header > .content > .contact:hover
-/*body > .header > .content > .list:hover {*/{
+body > .header > .content > .contact:hover{
     color: rgb(255, 151, 0);
 }
 
@@ -277,7 +309,7 @@ body > main > section > .main-intro > .--content > .information > a {
 
 
 body > main > section > .main-intro > .--content > .contact {
-    width: 25rem;
+    /*width: 25rem;*/
     border: 0.25rem solid rgba(255, 151, 0, 60%);;
     border-radius: 0.8rem;
     margin-top: 5rem;
@@ -373,8 +405,10 @@ body > main > section > .main-aboutMe > .--content > .content > .profile > .imag
 }
 
 body > main > section > .main-aboutMe > .--content > .content > .profile > .image {
-    border-radius: 0.7rem;
-    width: 21rem;
+    /*border-radius: 0.7rem;*/
+    /*width: 21rem;*/
+    border-radius: 9.3rem;
+    width: 20rem;
     margin-bottom: 5rem;
 }
 
@@ -391,7 +425,7 @@ body > main > section > .main-aboutMe > .--content > .content > .text > a {
     padding-top: 0.6rem;
     font-weight: 700;
     font-family: none;
-    font-size: 1.1rem;
+    /*font-size: 1.1rem;*/
 }
 
 
