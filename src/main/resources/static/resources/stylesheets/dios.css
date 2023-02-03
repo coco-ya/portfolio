@@ -1,4 +1,36 @@
 @charset "UTF-8";
+
+@media screen and (max-width: 700px) {
+    body > main > .main > .--content > .content-text {
+        font-size: 0.9rem;
+        width: 22rem;
+    }
+
+    body > main > .main > .--content > .content-text > .image {
+        width: 29rem;
+        margin-left: -4rem;
+    }
+
+    body > main > .main > .--content > .do-gif > .gif {
+        max-width: 30rem;
+    }
+}
+
+@media (min-width: 701px) and (max-width: 850px) {
+    body > main > .main > .--content > .content-text {
+        width: 32rem;
+    }
+
+    body > main > .main > .--content > .content-text > .image {
+        width: 38rem;
+    }
+
+    body > main > .main > .--content > .do-gif > .gif {
+        max-width: 40rem;
+    }
+}
+
+
 /*화면 크기 848px 이하일 때 */
 @media screen and (max-width: 848px) {
     body > main > .main > .--content > .title-container {
@@ -11,17 +43,6 @@
         align-items: center;
     }
 
-    body > main > .main > .--content > .content-text {
-        align-items: center;
-        width: 32rem;
-    }
-    body > main > .main > .--content > .content-text > .image {
-        width: 38rem;
-    }
-
-    body > main > .main > .--content > .do-gif > .gif {
-        max-width: 39rem;
-    }
 }
 @media screen and (min-width: 851px) {
     body > main > .main > .--content > .list {

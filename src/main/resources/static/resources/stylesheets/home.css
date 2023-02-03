@@ -1,29 +1,39 @@
 @charset "UTF-8";
-/*@media screen and (max-width: 770px) {*/
-/*    body > .header > .content > .intro,*/
-/*    body > .header > .content > .aboutMe,*/
-/*    body > .header > .content > .skills,*/
-/*    body > .header > .content > .projects,*/
-/*    body > .header > .content > .contact {*/
-/*        display: none;*/
-/*    }*/
 
-/*    body > .header  > .list {*/
-/*        float: right;*/
-/*        height: 70px;*/
-/*        line-height: 70px;*/
-/*        font-size: 32px;*/
-/*        cursor: pointer;*/
-/*        position: fixed;*/
+@media screen and (max-width: 555px) {
+    body > .header > .content > .intro,
+    body > .header > .content > .aboutMe,
+    body > .header > .content > .skills,
+    body > .header > .content > .projects,
+    body > .header > .content > .contact {
+        padding: 0.6rem 0 1rem 0.4rem;
+        font-size: 0.8rem;
+    }
+}
 
-/*    }*/
-/*}*/
+/*556이상 700이하*/
+@media (min-width: 556px) and (max-width: 700px) {
+    body > .header > .content > .intro,
+    body > .header > .content > .aboutMe,
+    body > .header > .content > .skills,
+    body > .header > .content > .projects,
+    body > .header > .content > .contact {
+        padding: 0.5rem 0 1rem 0.9rem;
+        font-size: 0.9rem;
+    }
+}
 
-/*@media screen and (min-width: 771px) {*/
-/*    body > .header  > .list {*/
-/*        display: none;*/
-/*    }*/
-/*}*/
+@media screen and (min-width: 701px) {
+    body > .header > .content > .intro,
+    body > .header > .content > .aboutMe,
+    body > .header > .content > .skills,
+    body > .header > .content > .projects,
+    body > .header > .content > .contact {
+        font-size: 1.1rem;
+        padding: 0.5rem 0 1rem 2rem;
+    }
+}
+
 
 @media screen and (max-width: 1000px) {
     body > main > section > .main-intro > .--content {
@@ -231,7 +241,6 @@ body > .header > .content > .logo {
     cursor: pointer;
 }
 
-
 body > .header > .content > .intro,
 body > .header > .content > .aboutMe,
 body > .header > .content > .skills,
@@ -239,9 +248,9 @@ body > .header > .content > .projects,
 body > .header > .content > .contact{
     background-color: inherit;
     color: rgb(0, 0, 0);
-    font-size: 1.1rem;
+    /*font-size: 1.1rem;*/
+    /*padding: 0.5rem 0 1rem 2rem;*/
     text-decoration: none;
-    padding: 0.5rem 0 1rem 2rem;
     font-weight: bold;
     cursor: pointer;
 }
