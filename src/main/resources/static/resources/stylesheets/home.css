@@ -110,7 +110,7 @@
     }
 
     body > main > section > .main-project > .--content > .projects > .content > ul > .iconContainer {
-        margin-bottom: 2rem;
+        margin-bottom: 3.5rem;
     }
 
     body > main > section > .main-project > .--content > .projects > .content > a > .image.matzip {
@@ -416,8 +416,8 @@ body > main > section > .main-aboutMe > .--content > .content > .profile > .imag
 body > main > section > .main-aboutMe > .--content > .content > .profile > .image {
     /*border-radius: 0.7rem;*/
     /*width: 21rem;*/
-    border-radius: 9.3rem;
-    width: 20rem;
+    border-radius: 7rem;
+    width: 16rem;
     margin-bottom: 5rem;
 }
 
@@ -641,9 +641,10 @@ body > main > section > .main-project > .--content > .projects > .content > a {
 }
 
 body > main > section > .main-project > .--content > .projects > .content > a > .image:hover {
-    transform: translateY(-30px);
+    transform: translateY(-17px);
+    /*filter: brightness(0.5);*/
     cursor: pointer;
-    transition: all 0.4s ease 0s;
+    transition: all 0.9s ease 0s;
 }
 
 body > main > section > .main-project > .--content > .projects > .content > a > .image:first-child {
