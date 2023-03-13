@@ -536,24 +536,25 @@ body > main > section > .main-skills > .--content > .skills4 > .content > ul {
 
 
 body > main > section > .main-skills > .--content > .skills > .content > .image.html {
-    width: 7rem;
-    margin-left: -1rem;
+    width: 7.3rem;
+
 }
 
 body > main > section > .main-skills > .--content > .skills > .content > .image.css {
-    width: 5rem;
-    margin-left: -3rem;
+    width: 5.3rem;
+    margin-left: -4rem;
     margin-right: 1rem;
 }
 
 body > main > section > .main-skills > .--content > .skills2 > .content > .image.java {
     width: 4.9rem;
     margin-right: 2rem;
+    margin-left: -2rem;
 }
 
 body > main > section > .main-skills > .--content > .skills3 > .content > .image.mariadb {
-    width: 9rem;
-    margin-left: 1.5rem;
+    width: 8rem;
+    margin-left: -3.5rem;
     margin-right: 1.1rem;
 }
 
@@ -564,8 +565,8 @@ body > main > section > .main-skills > .--content > .skills3 > .content > .image
 }
 
 body > main > section > .main-skills > .--content > .skills4 > .content > .image.springBoot {
-    width: 7rem;
-    margin-left: 2rem;
+    width: 6.6rem;
+    margin-left: 1rem;
     margin-right: 1rem;
 }
 
