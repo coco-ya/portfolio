@@ -295,7 +295,6 @@ body > main > section > .main-intro > .--content > .information {
     flex: 1;
     font-family: none;
     margin-left: 5rem;
-
 }
 
 body > main > section > .main-intro > .--content > .information > .circle {
@@ -314,8 +313,21 @@ body > main > section > .main-intro > .--content > .information > .circle {
 body > main > section > .main-intro > .--content > .information > a {
     font-size: 2.5rem;
     padding: 0.3rem;
+    animation: typing 2s steps(22), blink .5s step-end infinite alternate;
 }
 
+
+@keyframes typing {
+    from {
+
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent
+    }
+}
 
 body > main > section > .main-intro > .--content > .contact {
     /*width: 25rem;*/
@@ -393,12 +405,12 @@ body > main > section > .main-aboutMe > .--content {
 body > main > section > .main-aboutMe > .--content > .title {
     color: rgb(0, 0, 0);
     font-weight: 700;
-    font-size: 2.4rem;
+    font-size: 2.3rem;
 }
 
 body > main > section > .main-aboutMe > .--content > .content {
     display: flex;
-    width: 68rem;
+    width: 66rem;
     margin-top: 4rem;
     align-items: center;
     margin-bottom: 7rem;
@@ -409,7 +421,7 @@ body > main > section > .main-aboutMe > .--content > .content > .profile {
 }
 
 body > main > section > .main-aboutMe > .--content > .content > .profile > .image:first-child {
-    margin-right: 3rem;
+    margin-right: 4rem;
     margin-left: 2rem;
 }
 
@@ -417,7 +429,7 @@ body > main > section > .main-aboutMe > .--content > .content > .profile > .imag
     /*border-radius: 0.7rem;*/
     /*width: 21rem;*/
     border-radius: 7rem;
-    width: 16rem;
+    width: 15rem;
     margin-bottom: 5rem;
 }
 

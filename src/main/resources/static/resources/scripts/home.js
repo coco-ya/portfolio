@@ -1,4 +1,4 @@
-
+const sectionContainer = document.getElementById('sectionContainer');
 //초기화 함수
 function clearSelection() {
     document.getElementById('headerContainer').querySelectorAll(':scope > [rel="menu"]').forEach(menu => menu.classList.remove('selected'));
@@ -38,9 +38,23 @@ document.getElementById('sectionContainer').querySelectorAll(':scope > [rel="sec
 });
 
 //화면 줄었을 때 세줄
-function menuToggle() {
-    document.getElementById('menu').classList.toggle('show');
-}
+// function menuToggle() {
+//     document.getElementById('menu').classList.toggle('show');
+// }
+//
+// document.getElementById('toggleBtn').addEventListener('click', menuToggle);
 
-document.getElementById('toggleBtn').addEventListener('click', menuToggle);
+// const content = "신입\n 웹 개발자 \n 김현지입니다.";
+// const text = document.querySelector(".textLetter");
+// let i = 0;
+//
+// function typing(){
+//     let txt = content[i++];
+//     text.innerHTML += txt=== "\n" ? "<br/>": txt;
+//     if (i > content.length) {
+//         text.textContent = "";
+//         i = 0;
+//     }
+// }
+// setInterval(typing, 200)
 
