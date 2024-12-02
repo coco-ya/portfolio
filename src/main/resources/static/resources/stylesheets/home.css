@@ -1,5 +1,8 @@
 @charset "UTF-8";
 
+*{
+    font-family: Pretendard,-apple-system,BlinkMacSystemFont,system-ui,Roboto,Helvetica Neue,Segoe UI,Apple SD Gothic Neo,Noto Sans KR,Malgun Gothic,sans-serif;
+}
 @media screen and (max-width: 555px) {
     body > .header > .content > .intro,
     body > .header > .content > .aboutMe,
@@ -180,7 +183,7 @@
 html {
     overflow: hidden;
     height: 100%;
-    font-family: 'Montserrat', sans-serif;
+    /*font-family: 'Montserrat', sans-serif;*/
 }
 
 body {
@@ -364,7 +367,7 @@ body > main > section > .main-intro > .--content > .contact > .content > a {
 }
 
 body > main > section > .main-intro > .--content > .contact > .name > b {
-    font-weight: 900;
+    font-weight: 800;
     font-size: 1.2rem;
     margin-bottom: 1.3rem;
 }
@@ -428,26 +431,105 @@ body > main > section > .main-aboutMe > .--content > .content > .profile > .imag
 body > main > section > .main-aboutMe > .--content > .content > .profile > .image {
     /*border-radius: 0.7rem;*/
     /*width: 21rem;*/
-    border-radius: 7rem;
-    width: 15rem;
+    border-radius: 3rem;
+    width: 12rem;
     margin-bottom: 5rem;
 }
+body > main > section > .main-aboutMe > .--content > .content > .detail > .career > ul,
+body > main > section > .main-aboutMe > .--content > .content > .detail > .education > ul,
+body > main > section > .main-aboutMe > .--content > .content > .detail > .certificate > ul {
 
-body > main > section > .main-aboutMe > .--content > .content > .text {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    flex-direction: column;
-    /*margin-top: -6rem;*/
-    margin-left: 2rem;
-}
+    background-color: rgb(250, 250, 251);
+    border-radius: 0.9rem;
+    padding-top: 1.2rem;
+    padding-right: 1.5rem;
+    padding-bottom: 1.2rem;
+    width: 30rem;
 
-body > main > section > .main-aboutMe > .--content > .content > .text > a {
-    padding-top: 0.6rem;
-    font-weight: 700;
     font-family: none;
-    /*font-size: 1.1rem;*/
 }
+
+body > main > section > .main-aboutMe > .--content > .content > .detail > .career > ul > li,
+body > main > section > .main-aboutMe > .--content > .content > .detail > .career > ul > .company > li,
+body > main > section > .main-aboutMe > .--content > .content > .detail > .education > ul > li,
+body > main > section > .main-aboutMe > .--content > .content > .detail > .education > ul > .education.detail > li,
+body > main > section > .main-aboutMe > .--content > .content > .detail > .certificate > ul > .certificate.detail > li,
+body > main > section > .main-aboutMe > .--content > .content > .detail > .certificate > ul > .title{
+    list-style: none;
+}
+
+body > main > section > .main-aboutMe > .--content > .content > .detail > .career > ul >.title,
+body > main > section > .main-aboutMe > .--content > .content > .detail > .education > ul >.title,
+body > main > section > .main-aboutMe > .--content > .content > .detail > .certificate > ul >.title{
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    /*font-family: 'Montserrat', sans-serif;*/
+}
+
+body > main > section > .main-aboutMe > .--content > .content > .detail > .career > ul > .company{
+    display: flex;
+}
+
+body > main > section > .main-aboutMe > .--content > .content > .detail > .career > ul > .company > .company.name,
+body > main > section > .main-aboutMe > .--content > .content > .detail > .education > ul > .education.detail > .education.name,
+body > main > section > .main-aboutMe > .--content > .content > .detail > .certificate > ul > .certificate.detail > .certificate.name{
+    padding-right: 1rem;
+    font-size: 1.15rem;
+    font-weight: 600;
+}
+
+body > main > section > .main-aboutMe > .--content > .content > .detail > .career > ul > .company > .date{
+    padding-top: 0.1rem;
+    color: rgba(107,114,128);
+}
+
+body > main > section > .main-aboutMe > .--content > .content > .detail > .career > ul > .work{
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+    font-size: 1.1rem;
+}
+
+body > main > section > .main-aboutMe > .--content > .content > .detail > .education > ul > .education.detail > .date{
+    padding-bottom: 0.5rem;
+    color: rgba(107,114,128);
+}
+
+body > main > section > .main-aboutMe > .--content > .content > .detail > .certificate > ul > .certificate.detail{
+    display: flex;
+}
+
+body > main > section > .main-aboutMe > .--content > .content > .detail > .certificate > ul > .certificate.detail > .date{
+    color: rgba(107,114,128);
+}
+
+body > main > section > .main-aboutMe > .--content > .content > .detail > .certificate > ul > .certificate.detail.two,
+body > main > section > .main-aboutMe > .--content > .content > .detail > .certificate > ul > .certificate.detail.three{
+    padding-top: 0.5rem;
+}
+
+body > main > section > .main-aboutMe > .--content > .content > .detail > .education:hover,
+body > main > section > .main-aboutMe > .--content > .content > .detail > .career:hover,
+body > main > section > .main-aboutMe > .--content > .content > .detail > .certificate:hover{
+    transform: translateY(-10px);
+    transition: all 0.4s ease 0s;
+}
+
+/*body > main > section > .main-aboutMe > .--content > .content > .text {*/
+/*    display: flex;*/
+/*    align-items: flex-start;*/
+/*    justify-content: center;*/
+/*    flex-direction: column;*/
+/*    !*margin-top: -6rem;*!*/
+/*    margin-left: 2rem;*/
+/*}*/
+
+/*body > main > section > .main-aboutMe > .--content > .content > .text > a {*/
+/*    padding-top: 0.6rem;*/
+/*    font-weight: 700;*/
+/*    font-family: none;*/
+/*    !*font-size: 1.1rem;*!*/
+/*}*/
 
 
 body > main > section > .main-skills {
@@ -490,7 +572,7 @@ body > main > section > .main-skills > .--content > .title {
         align-items: flex-start;
         justify-content: flex-start;
         flex-direction: row;
-        margin-top: 2rem;
+        margin-top: 1.5rem;
     }
 }
 
@@ -526,7 +608,7 @@ body > main > section > .main-skills > .--content > .skills3 > .content > ul > .
 body > main > section > .main-skills > .--content > .skills4 > .content > ul > .title {
     font-size: 1.4rem;
     margin-bottom: 0.5rem;
-    font-family: 'Montserrat', sans-serif;
+    /*font-family: 'Montserrat', sans-serif;*/
 }
 
 body > main > section > .main-skills > .--content > .skills > .content > ul > li,
@@ -554,14 +636,12 @@ body > main > section > .main-skills > .--content > .skills > .content > .image.
 
 body > main > section > .main-skills > .--content > .skills > .content > .image.css {
     width: 5.3rem;
-    margin-left: -4rem;
-    margin-right: 1rem;
 }
 
 body > main > section > .main-skills > .--content > .skills2 > .content > .image.java {
     width: 4.9rem;
     margin-right: 2rem;
-    margin-left: -2rem;
+
 }
 
 body > main > section > .main-skills > .--content > .skills3 > .content > .image.mariadb {
@@ -671,7 +751,7 @@ body > main > section > .main-project > .--content > .projects > .content {
 }
 
 body > main > section > .main-project > .--content > .projects > .content:first-child {
-    margin-top: 3rem;
+    margin-top: 1rem;
 }
 
 body > main > section > .main-project > .--content > .projects > .content > ul {
@@ -706,7 +786,7 @@ body > main > section > .main-project > .--content > .projects > .content > ul >
 }
 
 body > main > section > .main-project > .--content > .projects > .content > ul > .name > .main-title {
-    font-weight: 800;
+    font-weight: 700;
     font-size: 1.3rem;
     margin-right: 1rem;
 }
@@ -720,7 +800,7 @@ body > main > section > .main-project > .--content > .projects > .content > ul >
 }
 
 body > main > section > .main-project > .--content > .projects > .content > ul > .title {
-    font-weight: 800;
+    font-weight: 700;
     font-size: 1rem;
     margin-top: 1rem;
     /*margin-bottom: 0.5rem;*/
@@ -817,5 +897,50 @@ body > main > .footer {
     margin-bottom: 3rem;
     color: rgb(146 146 146);
     font-size: 0.9rem;
-
 }
+
+/**************//**************//**************//**************//**************//**************/
+
+body > main > section > .main-skills > .--content > .skills,
+body > main > section > .main-skills > .--content > .skills2,
+body > main > section > .main-skills > .--content > .skills3{
+
+    background-color: rgb(255, 255, 255);
+    border-radius: 0.9rem;
+    padding-top: 1.2rem;
+    padding-right: 1.5rem;
+    padding-bottom: 1.2rem;
+    width: 30rem;
+
+    font-family: none;
+}
+
+body > main > section > .main-skills > .--content > .skills > .frontend > ul > .title,
+body > main > section > .main-skills > .--content > .skills2 > .Backend > ul > .title,
+body > main > section > .main-skills > .--content > .skills3 > .Tools > ul > .title
+{
+    list-style: none;
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    margin-right: 5rem;
+}
+
+body > main > section > .main-skills > .--content > .skills3 > .Tools > ul > .title{
+    margin-right: 7rem;
+}
+
+body > main > section > .main-skills > .--content > .skills > .frontend > ul,
+body > main > section > .main-skills > .--content > .skills2 > .Backend > ul,
+body > main > section > .main-skills > .--content > .skills3 > .Tools > ul
+{
+    display: flex;
+}
+
+body > main > section > .main-skills > .--content > .skills:hover,
+body > main > section > .main-skills > .--content > .skills2:hover,
+body > main > section > .main-skills > .--content > .skills3:hover {
+    transform: translateY(-10px);
+    transition: all 0.4s ease 0s;
+}
+

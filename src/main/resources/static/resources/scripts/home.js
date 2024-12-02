@@ -25,11 +25,11 @@ const observer = new IntersectionObserver(entries => {
             clearSelection();
             headerContainer.querySelector(`:scope > [rel="menu"][data-target-section="${entry.target.dataset.section}"]`).classList.add('selected');
         }
-
+//img alt="" class="image" th:src="@{/resources/images/dios.png}"
     });
 }, {
     root: document.body,
-    threshold: 0.35, // 얼마나 보였을 때 해당 위치라고 인식할지
+    threshold: 0.45, // 얼마나 보였을 때 해당 위치라고 인식할지
     rootMargin: '0px'
 });
 
