@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hyunji Portfolio</title>
+    <link rel="stylesheet" th:href="@{src/main/resources/static/resources/stylesheets/home.css}">
+    <script src="https://kit.fontawesome.com/282afddd53.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script defer src="src/main/resources/static/resources/scripts/index.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<header class="header" id="header">
+    <div class="content" id="headerContainer">
+        <a class="logo" rel="menu" data-target-section="logo">PORTFOLIO</a>
+        <a class="intro" rel="menu" data-target-section="intro">INTRO</a>
+        <a class="aboutMe" rel="menu" data-target-section="about">ABOUT ME</a>
+        <a class="skills" rel="menu" data-target-section="skills">SKILLS</a>
+        <a class="projects" rel="menu" data-target-section="projects">PROJECTS</a>
+        <a class="contact" rel="menu" data-target-section="contact">CONTACT</a>
+    </div>
+
+
+</header>
+<main id="sectionContainer">
+    <section class="section" rel="section" data-section="intro" id="intro">
+        <div class="main-intro">
+            <div class="--content content">
+                <div class="information">
+                    <a class="circle">안녕하세요!</a>
+                    <a class="textLetter">웹 개발자</a>
+                    <a class="textLetter">김현지입니다.</a>
+
+                </div>
+
+                <div class="contact">
+                    <div class="name">
+                        <b>이름</b>
+                        <b>연락처</b>
+                        <b>생년월일</b>
+                        <b>이메일</b>
+                        <b class="image-name">티스토리</b>
+                        <b class="image-name">깃허브</b>
+                    </div>
+                    <div class="content">
+                        <a>김현지</a>
+                        <a>010-4843-4232</a>
+                        <a>2000.08.23</a>
+                        <a>guswl049012@naver.com</a>
+                        <a href="https://coconya.tistory.com/" target='_blank'><img alt="" class="tistory"
+                                                                                    src="https://blog.kakaocdn.net/dn/tJJAF/btqNH0rpnHA/QFedr6Gwu7hoSEDOKltfvk/img.png"></a>
+
+                        <a href="https://github.com/coco-ya" style="margin-bottom: 0" target='_blank'>
+                            <img alt="" class="github"
+                                 src="https://cdn-icons-png.flaticon.com/512/25/25231.png"> </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" rel="section" data-section="about">
+        <div class="main-aboutMe">
+            <div class="--content aboutMe">
+                <a class="title">ABOUT ME</a>
+                <div class="content">
+                    <div class="profile">
+                        <img alt="" class="image" th:src="@{/resources/images/cocoya.jpeg}">
+                    </div>
+                    <div class="detail">
+
+                        <div class="career">
+                            <ul>
+                                <li class="title">Career</li>
+                                <div class="company">
+                                    <li class="company name">아이티포워드</li>
+                                    <li class="date">2023.04.19 – 2024.05.01</li>
+                                </div>
+
+                                <li class="work">- 한국도로공사 시스템 유지관리 및 웹 개발</li>
+
+
+                            </ul>
+                        </div>
+
+                        <div class="education">
+                            <ul>
+                                <li class="title">Education</li>
+                                <div class="education detail">
+                                    <li class="date">2022.08.25 – 2023.01.31</li>
+                                    <li class="education name">임베디드 소프트웨어 융합 풀스택
+                                        개발자 양성 과정</li>
+                                </div>
+
+                                <li class="work"></li>
+                            </ul>
+                        </div>
+
+                        <div class="certificate">
+                            <ul>
+                                <li class="title">Certificate</li>
+                                <div class="certificate detail">
+                                    <li class="certificate name">TOEIC Speaking Intermediate Mid 3</li>
+                                    <li class="date">2024.10.04</li>
+                                </div>
+                                <div class="certificate detail two">
+                                    <li class="certificate name">정보처리기사</li>
+                                    <li class="date">2024.06.18</li>
+                                </div>
+                                <div class="certificate detail three">
+                                    <li class="certificate name">SQL 개발자(SQLD)</li>
+                                    <li class="date">2023.10.06</li>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" rel="section" data-section="skills">
+        <div class="main-skills">
+            <div class="--content skill">
+                <a class="title">SKILLS</a>
+
+                <div class="skills">
+                    <div class="frontend">
+                        <ul>
+                            <li class="title">Frontend</li>
+                            <div class="skill detail">
+                                <li class="skill name">HTML</li>
+                                <li class="skill name">CSS</li>
+                                <li class="skill name">JavaScript</li>
+                            </div>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="skills2">
+                    <div class="Backend">
+                        <ul>
+                            <li class="title">Backend</li>
+                            <div class="skill detail">
+                                <li class="skill name">Java</li>
+                                <li class="skill name">Spring</li>
+                                <li class="skill name">C</li>
+                                <li class="skill name">JavaScript</li>
+                                <li class="skill name">Oracle DB</li>
+                                <li class="skill name">MariaDB</li>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="skills3">
+                    <div class="Tools">
+                        <ul>
+                            <li class="title">Tools</li>
+                            <div class="skill detail">
+                                <li class="skill name">IntelliJ IDEA</li>
+                                <li class="skill name">Eclipse</li>
+                                <li class="skill name">Nexacro</li>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        </div>
+    </section>
+
+    <section class="section" rel="section" data-section="projects" style="background: rgb(241 243 245);">
+        <div class="main-project">
+            <div class="--content project">
+                <div class="title-container">
+                    <a class="title">PROJECTS</a>
+                    <a class="explain first">
+                        <i class="circle-icon fa-solid fa-circle-check"></i>
+                        이미지 클릭 시 상세 설명 페이지로 이동합니다.
+                        <!--                    </a>-->
+                        <!--                    <a class="explain">-->
+                        <!--                        <i class="circle-icon fa-solid fa-circle-check"></i>-->
+                        <!--                        <i class="fa-solid fa-paper-plane" style="margin-right: 0.1rem"></i> 클릭 시 해당 웹 페이지로 이동합니다.-->
+                    </a>
+                </div>
+                <div class="projects">
+                    <div class="content">
+                        <a th:href="@{/dios}" target='_blank'>
+                            <img alt="" class="image" th:src="@{/resources/images/dios.png}">
+                            <img alt="" class="image" th:src="@{/resources/images/diosMyPage.png}">
+                        </a>
+
+                        <ul>
+                            <li class="name"><a class="main-title">DIOS</a><a class="team">팀 프로젝트</a></li>
+                            <li class="title">주요 기능</li>
+                            <li class="list">로그인 ㆍ 회원가입 ㆍ 마이페이지</li>
+                            <li class="list">운동 측정 기능 ㆍ 기록장</li>
+                            <li class="list">게시판</li>
+                            <li class="list">쇼핑몰</li>
+
+                            <li class="title">사용 기술</li>
+                            <li class="list"><i class="fa-solid fa-computer"></i>  : Intelli J </li>
+                            <li class="list"><b>Front</b> : HTML ㆍ CSS ㆍ JavaScript</li>
+                            <li class="list"><b>Back</b> : SpringBoot ㆍ Java ㆍ MariaDB</li>
+                            <li class="title">보러가기</li>
+
+                            <ul class="iconContainer">
+                                <li>
+                                    <a href="https://github.com/blackgreenDios/dios" target="_blank">
+                                        <i class="github fa-brands fa-github"></i></a>
+                                </li>
+                                <!--                                <li>-->
+                                <!--                                    <a href="https://dios.cocoyami.com" target='_blank'>-->
+                                <!--                                        <i class="web fa-solid fa-paper-plane"></i></a>-->
+                                </li>
+                            </ul>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="projects">
+                    <div class="content">
+                        <a th:href="@{/matzip}" target='_blank'>
+                            <img alt="" class="image matzip" th:src="@{/resources/images/matzip.png}">
+                        </a>
+
+                        <ul>
+                            <li class="name"><a class="main-title">matzip map</a><a class="team">개인 프로젝트</a></li>
+                            <li class="title">주요 기능</li>
+                            <li class="list">내 주변 음식점 확인 ㆍ 검색</li>
+                            <li class="list">리뷰 작성 ㆍ 삭제</li>
+                            <li class="list">소셜 로그인</li>
+
+                            <li class="title">사용 기술</li>
+                            <li class="list"><i class="fa-solid fa-computer"></i>  :  Intelli J </li>
+                            <li class="list"><b>Front</b> : HTML ㆍ CSS ㆍ JavaScript</li>
+                            <li class="list"><b>Back</b> : SpringBoot ㆍ Java ㆍ MariaDB</li>
+                            <li class="title">보러가기</li>
+                            <ul class="iconContainer">
+                                <li>
+                                    <a href="https://github.com/coco-ya/matzip" target="_blank">
+                                        <i class="github fa-brands fa-github"></i></a>
+                                </li>
+                                <!--                                <li>-->
+                                <!--                                <a href="https://matzip.cocoyami.com" target='_blank'>-->
+                                <!--                                    <i class="web fa-solid fa-paper-plane"></i></a>-->
+                                <!--                                </li>-->
+                            </ul>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="section" rel="section" data-section="contact">
+        <div class="footer">
+            <div class="--content contact">
+                <h2 class="title">CONTACT ME</h2>
+                <div class="contact-container">
+                    <div class="contact-icon">
+                        <i class=" email fa-solid fa-envelope"></i>
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <div class="contact-content">
+                        <a class="email">guswl049012@naver.com</a>
+                        <a href="tel:010-4843-4232" class="phone">
+                            010-4843-4232
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="footer">
+        <a>해당 페이지는 크롬 브라우저에 최적화되어 있습니다.</a>
+
+        <a>해당 포트폴리오의 모든 제작물은 상업적 목적과 무관합니다.</a>
+    </div>
+
+
+</main>
+</body>
+</html>
