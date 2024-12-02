@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+*{
+    font-family: Pretendard,-apple-system,BlinkMacSystemFont,system-ui,Roboto,Helvetica Neue,Segoe UI,Apple SD Gothic Neo,Noto Sans KR,Malgun Gothic,sans-serif;
+}
+
 @media screen and (max-width: 700px) {
     body > main > .main > .--content > .content-text {
         font-size: 0.9rem;
